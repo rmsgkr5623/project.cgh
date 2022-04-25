@@ -1,0 +1,354 @@
+
+body {
+    margin:0;
+    height:5112px;
+  }
+  @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+  }
+  html>body{
+    font-family: 'Pretendard-Regular';
+  }
+  /*라이브러리*/
+  :root {
+    --site-width:1280px;
+    --top-bar__height:64px;
+  }
+  body{
+    height:5500px; 
+  }
+  /*탑바*/
+  
+  .top-bar{
+    --color:white;
+    --inverse-color:black;
+    --height:64px;
+    height:var(--height);
+    color:var(--color);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:2;
+  }
+  .top-gr{
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0));
+  }
+  .top-gr.hover{
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0));
+  }
+  
+  .top-bar.hover{
+    --inverse-color:white;
+    --color:black;
+    background-color:var(--inverse-color)
+  }
+  .logo{
+    font-size:1.3rem;
+    font-weight:bold;
+    letter-spacing:0.025rem;
+  }
+  .menu-box>ul>li>a>span{
+    font-size:20px;
+  }
+  .menu-box>ul>li:not(.menu-ho)>a>span{
+    font-size:14px;
+  }
+  .menu-ho1>a>span{
+    background-color:var(--color, white);
+    color:var(--inverse-color, black);
+    padding:8px 12px 8px 12px;
+    margin-bottom:5px;
+    border-radius:20px;
+  }
+  
+  
+  /**/
+  .con {
+    max-width:var(--site-width);
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .slider-box-1 {
+    height:450px;
+  
+  }
+  
+  html > body .slider-box-1 .swiper-button-next {
+    color:white;
+    
+  }
+  html > body .slider-box-1 .swiper-button-prev {
+    color:white; 
+  }
+  .swiper-slide-1 {
+    background-image:url(https://d35ai18pny966l.cloudfront.net/course/roblox_carousel_1024.png);
+    background-position:center;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-color:black;
+  }
+  .swiper-slide-2 {
+    background-image:url(https://d35ai18pny966l.cloudfront.net/course/clayful_carousel_1920.png);
+    background-position:center;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-color:#4ccbed;
+  }
+  .swiper-slide-3 {
+    background-image:url(https://d35ai18pny966l.cloudfront.net/course/mbti_carousel_1920.png);
+    background-position:center;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-color:#f2f9ff;
+    
+  }
+  .text-box{
+    width:401px;
+    height:134px;
+  }
+  .text-1{
+    color:white;
+    margin-bottom:50px;
+    margin-right:895px;
+    
+  }
+  .sw-1{
+    padding-left:20px;
+    padding-right:20px;
+  }
+  
+  .tx1{
+    padding-bottom:8px;
+    font-size:32px;
+    font-weight:bold;
+  }
+  .tx2{
+    padding-bottom:16px;
+    padding-top:8px;
+    font-size:20px;
+    font-weight:bold;
+  }
+  .tx5{
+    padding-bottom:8px;
+    font-size:32px;
+    font-weight:bold;
+    color:black;
+  }
+  .tx6{
+    color:black;
+    padding-bottom:16px;
+    padding-top:8px;
+    font-size:20px;
+    font-weight:bold;
+  }
+  .tx3{
+    font-size:16px;
+    color:black;
+    width:104px;
+    height:40px;
+    background-color:white;
+    border-radius:0.5rem;
+  }
+  @media ( max-width:768px ) and ( min-width:500px ) {
+    .swiper-slide-2{
+      background-image:url(https://d35ai18pny966l.cloudfront.net/course/clayful_carousel_768.png);
+    }
+  }
+  @media ( max-width:768px ) and ( min-width:500px ) {
+    .swiper-slide-1{
+      background-image:url(https://d35ai18pny966l.cloudfront.net/course/roblox_carousel_768.png);
+    }
+  }
+  @media ( max-width:768px ) and ( min-width:500px ) {
+    .swiper-slide-3{
+      background-image:url(https://d35ai18pny966l.cloudfront.net/course/mbti_carousel_768.png);
+    }
+  }
+  /*리스트*/
+  .start-tx{
+    margin-top:80px;
+    margin-bottom:32px;
+  }
+  .start-list>ul>li>a>img{
+    width:100%;
+  }
+  .start-tx1{
+    font-size:20px;
+    color:#737373;
+  }
+  .start-tx2{
+    font-size:32px;
+    font-weight:bold;
+    margin-top:8px;
+  }
+  
+  .start-list>ul>li>a>img{
+    
+   /*여기부분 높이 너비뺌*/
+    margin-bottom:16px;
+    border-radius:8px;
+  }
+  .start-list>ul>li>a>span:nth-child(1){
+    font-size:20px;
+    font-weight:bold;
+  }
+  .start-list>ul>li>a>span:nth-child(3){
+    font-size:16px;
+  }
+  .start-list>ul>li>a>span:nth-child(5){
+    font-size:20px;
+    color:#e67800;
+    font-weight:bold;
+  }
+  
+  .start-list>ul>li>a>span:nth-child(6){
+    font-size:20px;
+    font-weight:bold; 
+  }
+  .start-list>ul>li>a>span:nth-child(8){
+    font-size:20px;
+    color:rgba(0,0,0,0.5);
+  }
+  .sp-1{
+    color:black;
+    font-size:20px;
+    font-weight:bold;
+  }
+  .start-list>ul>li>a>img{
+    width:100%;
+    display:block;
+  }
+  .border-line-11{
+    width:1280px;
+    height:1.2px;
+    background-color:rgba(0,0,0,0.2);
+  }
+  .contant3{
+    margin-top:6.75rem;
+  }
+  .leap-text1{
+    font-size:20px;
+    color:#747474;
+    margin-top:5rem;
+    margin-bottom:3px;
+  }
+  .leap-text2{
+    font-size:32px;
+    font-weight:bold;
+    margin-top:8px;
+    margin-bottom:32px;
+  }
+  .leap-list>ul>li>a>img{
+    
+    /*높이 너비뻄*/
+    margin-bottom:1rem;
+    border-radius:8px;
+  }
+  .leap-list>ul>li>a>img{
+    width:100%;
+    display:block;
+  }
+  
+  .leap-bt-1{
+    background-color:#e67800;
+    width:154px;
+    height:48px;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    margin-top:32px;
+  }
+  .leap-bt-2{
+    background-color:#d4d4d4;
+    width:99.14px;
+    height:48px;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    margin-top:32px;
+  }
+  .leap-bt-3{
+    background-color:#e67800;
+    width:112px;
+    height:48px;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    margin-top:32px;
+  }
+  .leap-list-text>a>span:nth-child(1){
+    font-size:20px;
+    font-weight:bold;
+  }
+  .hr-1{
+    margin-top:90px;
+  }
+  /*푸터바*/
+  
+  .footer-logo{
+    font-size:38px;
+    font-weight:bold;
+    line-height:40px;
+    margin-bottom:2rem;
+  }
+  .footer-text-1{
+    font-size:16px;
+    font-weight:bold;
+  }
+  .footer-text-2{
+    font-size:14px;
+    margin-bottom:32px;
+  }
+  .footer-text-3{
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:17px;
+  }
+  .footer-text-4{
+    font-size:14px;
+    margin-bottom:16px;
+  }
+  .footer-text-5{
+    font-size:16px;
+    font-weight:bold;
+  }
+  .ico-5{
+    margin-right:8px;
+  }
+  .ico-6{
+    margin-right:9px;
+  }
+  .footer-bt{
+    padding:12px 112px;
+    border:1px solid rgba(0,0,0,0.5);
+    border-radius:10px;
+    font-size:14px;
+    font-weight:bold;
+    margin-top:10px;
+  }
+  .footer-bo-text1{
+    font-size:12px;
+    color:rgba(0,0,0,0.5);
+    margin-top:8px;
+  }
+  .footer-bo-text2{
+    font-size:12px;
+    font-weight:bold;
+    color:#e67800;
+    margin-top:8px;
+  }
+  .footer-ch1{
+    margin-bottom:32px;
+  }
+  .footer-top{
+    margin-top:130px;
+    padding:32px 16px;
+  }

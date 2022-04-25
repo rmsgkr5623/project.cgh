@@ -1,0 +1,115 @@
+body {
+    margin:0;
+    background-color:#fafafa;
+  }
+  @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+  }
+  html>body{
+    font-family: 'Pretendard-Regular';
+  }
+  /*라이브러리*/
+  .flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    --y-gap: 0px;
+    --x-gap: 0px;
+    --cc: 5;
+    gap: var(--y-gap) var(--x-gap);
+  }
+  
+  .flex-grid > * {
+    width: calc(100% / var(--cc) - (var(--x-gap) * (var(--cc) - 1)) / var(--cc));
+  }
+  
+  .img-list > div > ul {
+    --cc: 3;
+    --x-gap: 10px;
+    --y-gap: 10px;
+  }
+  :root {
+    --site-width:572px;
+  }
+  .con-min-width {
+    min-width:var(--site-width);
+  }
+  
+  
+
+  
+  .con {
+    width:var(--site-width);
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .login-box{
+    width:572px;
+    height:799px;
+    background-color:white;
+    padding:3rem 72px;
+    margin-top:80px;
+    border-radius:20px;
+  }
+  .login-logo>a>img{
+    height:34px;
+  }
+  .login-logo{
+    margin-bottom:52px;
+  }
+  .login-tx1{
+    font-size:32px;
+    font-weight:bold;
+    color:black;
+    margin-bottom:8px;
+  }
+  .login-tx2{
+    font-size:14px;
+  }
+  .login-email{
+    margin-top:48px;
+    margin-bottom:8px;
+  }
+  .login-text2{
+    color:red;
+    font-size:12px;
+  }
+  .email-box-1{
+    margin-top:1rem;
+  }
+  .login-text2{
+    margin-bottom:4rem;
+  }
+  .ico-1{
+    font-size:20px;
+    color:rgba(0,0,0,0.5);
+    transform:translatex(1520%)translatey(70%);
+  }
+  .bt-1{
+    background-color:#e67800;
+    border-radius:10px;
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+  }
+  .bt-2{
+    margin-top:12px;
+    border-radius:10px;
+    color:#e67800;
+    font-size:14px;
+    border:2px solid #e67800;
+    background-color:white;
+    font-weight:bold;
+    margin-bottom:2rem;
+  }
+  .one{
+    margin-top:5px;
+    margin-left:16px;
+    margin-right:16px;
+  }
+  .login-text3{
+    font-size:12px;
+    color:rgba(0,0,0,0.5);
+  }
